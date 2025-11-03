@@ -3,7 +3,7 @@
 import type React from "react"
 import { useState, useEffect, useContext } from "react"
 import { motion, AnimatePresence } from "framer-motion"
-import { X, Info, Phone, Mail, User ,IndianRupee} from "lucide-react"
+import { X, Info, Phone, Mail, User, IndianRupee } from "lucide-react"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
@@ -61,7 +61,7 @@ export default function DiscountPopup({ isSubmitted, setIsSubmitted }: isSubmitP
         setPhone("")
         setEmail("")
         const whatsappNumber = "8237311365"
-        const message = `Hi, I want to enquire about Mantra Burgundy Series.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}`
+        const message = `Hi, I want to enquire about Godrej Properties.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}`
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank")
         return "success"
       },
@@ -78,7 +78,7 @@ export default function DiscountPopup({ isSubmitted, setIsSubmitted }: isSubmitP
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="fixed inset-0 min-h-screen bg-[#4a1c1c]/60 backdrop-blur-sm z-50 flex items-center justify-center p-2 xs:p-4"
+          className="fixed inset-0 min-h-screen bg-black/50 backdrop-blur-sm z-50 flex items-center justify-center p-2 xs:p-4"
           onClick={handleClose}
         >
           <motion.div
@@ -86,20 +86,20 @@ export default function DiscountPopup({ isSubmitted, setIsSubmitted }: isSubmitP
             animate={{ scale: 1, opacity: 1 }}
             exit={{ scale: 0.9, opacity: 0 }}
             transition={{ type: "spring", duration: 0.4 }}
-            className="bg-[#f8f5f2] rounded-2xl shadow-2xl w-full max-w-[95vw] sm:max-w-xl md:max-w-4xl relative border border-[#a0522d]/20 flex flex-col md:flex-row"
+            className="bg-gradient-to-br from-[#ffffff] via-[#f7f7f7] to-[#ece8e3] rounded-3xl shadow-2xl w-full max-w-[95vw] sm:max-w-xl md:max-w-4xl relative border border-[#d1c7b9]/50 flex flex-col md:flex-row overflow-hidden"
             onClick={(e) => e.stopPropagation()}
           >
-            {/* Fixed Close Button (visible always) */}
+            {/* Close Button */}
             <button
               onClick={handleClose}
-              className="fixed top-6 right-6 z-[99] p-2 rounded-full bg-[#fff8f2]/90 hover:bg-[#fff2ea] transition-colors shadow-md
+              className="fixed top-6 right-6 z-[99] p-2 rounded-full bg-white/80 hover:bg-white transition-colors shadow-md
                          md:absolute md:top-3 md:right-3 md:z-10"
             >
-              <X className="w-5 h-5 text-[#6b1d1d]" />
+              <X className="w-5 h-5 text-[#3d3d3d]" />
             </button>
-            {/* Modal Content Area (scrollable only, not the close button or overlay) */}
+
             <div className="flex-1 h-full overflow-y-auto max-h-[90vh] flex flex-col md:flex-row">
-              {/* ℹ️ Info (Top-Left Tooltip Button) */}
+              {/* Info Tooltip */}
               <div className="absolute top-3 left-3 z-20">
                 <div
                   onMouseEnter={() => setShowTooltip(true)}
@@ -107,8 +107,8 @@ export default function DiscountPopup({ isSubmitted, setIsSubmitted }: isSubmitP
                   onClick={() => setShowTooltip(prev => !prev)}
                   className="relative"
                 >
-                  <div className="p-2 rounded-full bg-[#fff8f2]/90 hover:bg-[#fff2ea] shadow-md cursor-pointer transition-colors">
-                    <Info className="w-5 h-5 text-[#6b1d1d]" />
+                  <div className="p-2 rounded-full bg-white/80 hover:bg-white shadow-md cursor-pointer transition-colors">
+                    <Info className="w-5 h-5 text-[#1a1a1a]" />
                   </div>
                   <AnimatePresence>
                     {showTooltip && (
@@ -119,121 +119,124 @@ export default function DiscountPopup({ isSubmitted, setIsSubmitted }: isSubmitP
                         transition={{ duration: 0.3 }}
                         className="absolute top-10 left-0 w-64 sm:w-72 bg-white border border-gray-200 rounded-xl shadow-xl p-3 sm:p-4 text-xs sm:text-sm text-gray-700 z-30"
                       >
-                        <h4 className="font-semibold text-[#800020] mb-2">Terms & Conditions</h4>
+                        <h4 className="font-semibold text-[#1a1a1a] mb-2">Terms & Conditions</h4>
                         <ul className="list-disc pl-4 space-y-1">
-                          <li>Enjoy an additional guaranted privilege — your instant discount code applies over and above the final lowest offer price confirmed after your site visit.</li>
-                          <li>Valid for 7 days from the date you receive this message</li>
-                          <li>Use the code on the top right-hand side, or mention it to reception during your site visit</li>
-                          <li>This is a unique & personalised code only for you</li>
-                          <li>If your visit plan changes, inform us — we’ll revise or reissue the code accordingly</li>
-                          <li>Feel free to connect for any assistance</li>
+                          <li>Exclusive luxury offer valid for a limited time.</li>
+                          <li>Additional benefits applicable post site visit confirmation.</li>
+                          <li>Personalized coupon code — valid for 7 days.</li>
+                          <li>Use or mention the code at the Godrej site office.</li>
+                          <li>Inform us for rescheduling your visit and code renewal.</li>
+                          <li>Our team will assist you through every step.</li>
                         </ul>
-                        <p className="text-xs mt-3 text-gray-500"></p>
                       </motion.div>
                     )}
                   </AnimatePresence>
                 </div>
               </div>
+
               {/* Left Side - Form */}
-              <div className="flex-1 p-3 sm:p-6 md:p-8 flex flex-col justify-center order-2 md:order-1">
+              <div className="flex-1 p-3 sm:p-6 md:p-8 flex flex-col justify-center order-2 md:order-1 bg-white/70 backdrop-blur-md">
                 <div className="max-w-sm mx-auto w-full">
-                  <div className="text-center mb-4 sm:mb-6 md:mb-8">
-                    <h2 className="text-lg sm:text-2xl md:text-3xl font-bold text-[#4a1c1c] mb-1 sm:mb-2">
-                      Exclusive Offer
+                  <div className="text-center mb-6 md:mb-8">
+                    <h2 className="text-lg sm:text-2xl md:text-3xl font-semibold text-[#2a2a2a] mb-2 tracking-wide">
+                      Exclusive Privilege
                     </h2>
-                    <p className="text-[#6b1d1d]/80 text-xs sm:text-sm md:text-base">
-                      Grab your coupon code here
+                    <p className="text-[#5a5a5a]/90 text-xs sm:text-sm md:text-base">
+                      Get your personalized site visit offer
                     </p>
                   </div>
-                  <form onSubmit={handleSubmit} className="space-y-4 sm:space-y-5 md:space-y-6">
+
+                  <form onSubmit={handleSubmit} className="space-y-5 md:space-y-6">
                     {/* Name Field */}
                     <div>
-                      <Label htmlFor="name" className="text-xs sm:text-sm font-medium text-[#4a1c1c] mb-1 block">
+                      <Label htmlFor="name" className="text-sm font-medium text-[#3d3d3d] mb-1 block">
                         Name *
                       </Label>
                       <div className="relative">
-                        <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#a0522d]/60" />
+                        <User className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#8c7a58]/70" />
                         <Input
                           id="name"
                           type="text"
                           value={name}
                           onChange={(e) => setName(e.target.value)}
-                          placeholder="Enter your name"
-                          className="pl-8 sm:pl-10 h-10 sm:h-11 md:h-12 border-[#b23b3b]/40 focus:border-[#800020] focus:ring-0 text-[#4a1c1c] placeholder-[#6b1d1d]/60 bg-[#fff8f2] w-full"
+                          placeholder="Enter your full name"
+                          className="pl-10 h-12 border-[#c5b69e]/40 focus:border-[#8c7a58] focus:ring-0 bg-[#f9f8f6] text-[#2a2a2a]"
                         />
                       </div>
-                      {errors.name && <p className="text-[#b23b3b] text-xs sm:text-sm mt-1">{errors.name}</p>}
+                      {errors.name && <p className="text-[#a03e3e] text-xs mt-1">{errors.name}</p>}
                     </div>
+
                     {/* Email Field */}
                     <div>
-                      <Label htmlFor="email" className="text-xs sm:text-sm font-medium text-[#4a1c1c] mb-1 block">
+                      <Label htmlFor="email" className="text-sm font-medium text-[#3d3d3d] mb-1 block">
                         Email *
                       </Label>
                       <div className="relative">
-                        <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#a0522d]/60" />
+                        <Mail className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#8c7a58]/70" />
                         <Input
                           id="email"
                           type="email"
                           value={email}
                           onChange={(e) => setEmail(e.target.value)}
                           placeholder="Enter your email"
-                          className="pl-8 sm:pl-10 h-10 sm:h-11 md:h-12 border-[#b23b3b]/40 focus:border-[#800020] focus:ring-0 text-[#4a1c1c] placeholder-[#6b1d1d]/60 bg-[#fff8f2] w-full"
+                          className="pl-10 h-12 border-[#c5b69e]/40 focus:border-[#8c7a58] focus:ring-0 bg-[#f9f8f6] text-[#2a2a2a]"
                         />
                       </div>
-                      {errors.email && <p className="text-[#b23b3b] text-xs sm:text-sm mt-1">{errors.email}</p>}
+                      {errors.email && <p className="text-[#a03e3e] text-xs mt-1">{errors.email}</p>}
                     </div>
+
                     {/* Phone Field */}
                     <div>
-                      <Label htmlFor="phone" className="text-xs sm:text-sm font-medium text-[#4a1c1c] mb-1 block">
+                      <Label htmlFor="phone" className="text-sm font-medium text-[#3d3d3d] mb-1 block">
                         Phone Number *
                       </Label>
                       <div className="relative">
-                        <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 sm:w-5 sm:h-5 text-[#a0522d]/60" />
+                        <Phone className="absolute left-3 top-1/2 transform -translate-y-1/2 w-5 h-5 text-[#8c7a58]/70" />
                         <Input
                           id="phone"
                           type="tel"
                           value={phone}
                           onChange={(e) => setPhone(e.target.value)}
-                          placeholder="Enter your phone number"
-                          className="pl-8 sm:pl-10 h-10 sm:h-11 md:h-12 border-[#b23b3b]/40 focus:border-[#800020] focus:ring-0 text-[#4a1c1c] placeholder-[#6b1d1d]/60 bg-[#fff8f2] w-full"
+                          placeholder="Enter 10-digit mobile number"
+                          className="pl-10 h-12 border-[#c5b69e]/40 focus:border-[#8c7a58] focus:ring-0 bg-[#f9f8f6] text-[#2a2a2a]"
                           maxLength={10}
                         />
                       </div>
-                      {errors.phone && <p className="text-[#b23b3b] text-xs sm:text-sm mt-1">{errors.phone}</p>}
+                      {errors.phone && <p className="text-[#a03e3e] text-xs mt-1">{errors.phone}</p>}
                     </div>
+
                     {/* Submit Button */}
                     <Button
                       type="submit"
-                      className="w-full h-10 sm:h-11 md:h-12 bg-[#800020] hover:bg-[#6b1d1d] text-[#fff8f2] font-semibold rounded-md shadow-sm border border-[#a0522d]/30 transition-transform hover:-translate-y-0.5"
+                      className="w-full h-12 bg-gradient-to-r from-[#8c7a58] to-[#a89674] hover:from-[#7b694e] hover:to-[#98865f] text-white font-semibold rounded-lg shadow-md transition-all duration-200 hover:scale-[1.01]"
                     >
                       Get in Touch
                     </Button>
                   </form>
                 </div>
               </div>
-              {/* Right Side - Offer Section */}
-              <div className="flex-1 bg-[#800020] relative overflow-y-auto order-1 md:order-2 h-56 sm:h-72 md:h-auto rounded-2xl">
-                <div className="absolute inset-0 bg-[#4a1c1c]/40"></div>
-                <div className="relative h-full flex flex-col items-center justify-start md:justify-center p-4 sm:p-6 md:p-10 text-[#fff8f2] text-left">
-                     <h3 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-[#f4d19b]">
-                      We Promise
-                    </h3>
 
-      
-                  <div className="space-y-3 sm:space-y-6">
-                     <p className="flex items-center text-xs sm:text-sm md:text-base leading-relaxed">
-                     <Phone className="w-4 h-4 sm:w-5 sm:h-5 text-[#f4d19b] mr-2 sm:mr-3" />
-                     Instant Call Back
-                     </p>
-                     <p className="flex items-center text-xs sm:text-sm md:text-base leading-relaxed">
-                        <User className="w-4 h-4 sm:w-5 sm:h-5 text-[#f4d19b] mr-2 sm:mr-3" />
-                       Free Site Visit
-                      </p>
-                       <p className="flex items-center text-xs sm:text-sm md:text-base leading-relaxed">
-                       <IndianRupee className="w-4 h-4 sm:w-5 sm:h-5 text-[#f4d19b] mr-2 sm:mr-3" />
-                         Lowest Price Guaranteed
-                      </p>
-</div>
+              {/* Right Side - Offer Section */}
+              <div className="flex-1 relative overflow-y-auto order-1 md:order-2 h-56 sm:h-72 md:h-auto bg-gradient-to-br from-[#2e2a25] via-[#3b3530] to-[#50473f]">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black/30"></div>
+                <div className="relative h-full flex flex-col items-center justify-center p-6 md:p-10 text-[#f5f5f5] text-left">
+                  <h3 className="text-base sm:text-xl md:text-2xl font-semibold mb-4 sm:mb-6 text-[#d4af37]">
+                    We Promise
+                  </h3>
+                  <div className="space-y-4 sm:space-y-6">
+                    <p className="flex items-center text-sm md:text-base">
+                      <Phone className="w-5 h-5 text-[#d4af37] mr-3" />
+                      Instant Call Back
+                    </p>
+                    <p className="flex items-center text-sm md:text-base">
+                      <User className="w-5 h-5 text-[#d4af37] mr-3" />
+                      Free Site Visit
+                    </p>
+                    <p className="flex items-center text-sm md:text-base">
+                      <IndianRupee className="w-5 h-5 text-[#d4af37] mr-3" />
+                      Best Price Assurance
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

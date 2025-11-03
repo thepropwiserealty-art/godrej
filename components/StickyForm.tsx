@@ -27,7 +27,7 @@ export default function StickyForm({ isSubmitted, setIsSubmitted }: isSubmitProp
     if (phone.length !== 10) return toast.error("Enter 10 digit number")
 
     await toast.promise(signup(name, email, phone), {
-      loading: "processing...",
+      loading: "Processing...",
       success: () => {
         setIsSubmitted(true)
         setAuthenticated(true)
@@ -36,50 +36,57 @@ export default function StickyForm({ isSubmitted, setIsSubmitted }: isSubmitProp
         setPhone("")
         setEmail("")
 
-        const whatsappNumber = "8237311365" // <-- REPLACE WITH YOUR NUMBER
-        const message = `Hi, I want to enquire about Mantra Burgundy Series.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}`
+        const whatsappNumber = "9657119798"
+        const message = `Hi, I want to enquire about Godrej Properties.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}`
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank")
 
-        return "success"
+        return "Success"
       },
       error: (err) => `${err.toString()}`,
     })
   }
 
   return (
-    <div className="hidden lg:block fixed bottom-0 left-0 w-full bg-[#f8f5f2] shadow-lg border-t border-[#a52a2a]/30 z-[9999]">
+    <div className="hidden lg:block fixed bottom-0 left-0 w-full bg-[#f8f9f4] shadow-[0_-2px_10px_rgba(0,0,0,0.08)] border-t border-[#d4c29e]/40 z-[9999] backdrop-blur-md">
       <div className="max-w-screen-xl mx-auto px-4">
         <form
           className="flex flex-wrap items-center gap-4 py-4"
           onSubmit={handleSubmit}
-        > Enquire Now
+        >
+          <span className="text-[#0f5132] font-semibold text-lg tracking-wide mr-4 uppercase">
+            Enquire Now
+          </span>
+
           <input
             type="text"
             placeholder="Name*"
             value={name}
             onChange={(e) => setName(e.target.value)}
             required
-            className="flex-1 min-w-[150px] bg-transparent border-b border-[#6b1d1d]/40 text-[#4a1c1c] placeholder-[#6b1d1d]/60 focus:border-[#b23b3b] focus:outline-none transition"
+            className="flex-1 min-w-[150px] bg-transparent border-b border-[#0f5132]/40 text-[#1b4332] placeholder-[#3b5d50]/60 focus:border-[#d4af37] focus:outline-none transition-all duration-300"
           />
+
           <input
             type="email"
             placeholder="Email*"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
             required
-            className="flex-1 min-w-[150px] bg-transparent border-b border-[#6b1d1d]/40 text-[#4a1c1c] placeholder-[#6b1d1d]/60 focus:border-[#b23b3b] focus:outline-none transition"
+            className="flex-1 min-w-[150px] bg-transparent border-b border-[#0f5132]/40 text-[#1b4332] placeholder-[#3b5d50]/60 focus:border-[#d4af37] focus:outline-none transition-all duration-300"
           />
+
           <input
             type="tel"
             placeholder="Phone*"
             value={phone}
             onChange={(e) => setPhone(e.target.value)}
             required
-            className="flex-1 min-w-[150px] bg-transparent border-b border-[#6b1d1d]/40 text-[#4a1c1c] placeholder-[#6b1d1d]/60 focus:border-[#b23b3b] focus:outline-none transition"
+            className="flex-1 min-w-[150px] bg-transparent border-b border-[#0f5132]/40 text-[#1b4332] placeholder-[#3b5d50]/60 focus:border-[#d4af37] focus:outline-none transition-all duration-300"
           />
+
           <button
             type="submit"
-            className="bg-[#800020] hover:bg-[#6b1d1d] text-[#fff8f2] font-semibold px-6 py-2 rounded-md transition transform hover:-translate-y-0.5 whitespace-nowrap shadow-sm border border-[#a0522d]/20"
+            className="bg-[#0f5132] hover:bg-[#145a32] text-[#fffaf0] font-semibold px-8 py-2 rounded-md tracking-wide shadow-md border border-[#d4af37]/30 hover:shadow-lg transition transform hover:-translate-y-0.5"
           >
             Submit
           </button>
