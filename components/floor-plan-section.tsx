@@ -25,7 +25,7 @@ const floorPlans = [
     size: "915* sqft",
     beds: 2,
     price: "From ₹1.69Cr*",
-    image: "/villa_floor1.png",
+    image: "/blur1.jpeg",
     features: ["2 beds ", "In MagarPatta ,Pune", "Masterfull engineering"],
   },
   {
@@ -34,7 +34,7 @@ const floorPlans = [
     size: "1166* sqft",
     beds: 3,
     price: "From ₹2.19Cr*",
-    image: "/mayfair3bhk.png",
+    image: "/blur2.jpeg",
     features: ["Luxuries 3 BHK ", "In MagarPatta ,Pune", "Masterfull blend of privacy and community"],
   },
   {
@@ -43,7 +43,7 @@ const floorPlans = [
     size: "1440* sqft",
     beds: 4,
     price: "From ₹2.69Cr*",
-    image: "/mayfair4bhk.png",
+    image: "/blur3.jpeg",
     features: ["Luxuries 3 BHK ", "In MagarPatta ,Pune", "Architectural brilliance & natural beauty"],
   },
   {
@@ -53,7 +53,7 @@ const floorPlans = [
     beds: 4,
     baths: 1,
     price: "From ₹3.59Cr*",
-    image: "/oneresidences3bhk.png",
+    image: "/blur1.jpeg",
     features: ["Luxuries 4 BHK", "At Magarpatta , Pune", "Pure Elegance and Comfort"],
   },
 ]
@@ -230,7 +230,7 @@ export default function FloorPlanSection() {
                           Schedule Tour
                         </Button>
                       </div>
-                    </div>
+                    </div> 
                   </div>
                 </CardContent>
               </Card>

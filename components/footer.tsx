@@ -22,7 +22,7 @@ export default function Footer() {
             <div className="flex items-center space-x-2">
               <div className="bg-white p-2 rounded-md flex items-center justify-center">
                 <img
-                  src="/logo.png"
+                  src="/godrejlogo.png"
                   alt="Mantra Burgundy Logo"
                   className="h-14 w-auto rounded-md"
                 />
@@ -31,11 +31,11 @@ export default function Footer() {
             <div className="space-y-2 text-primary-foreground/80 text-sm">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span>Mantra Burgundy</span>
+                <span>Godrej Property </span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span>+91 8237311365</span>
+                <span>+91 9657119798</span>
               </div>
               
             </div>
@@ -49,9 +49,8 @@ export default function Footer() {
             viewport={{ once: true }}
             className="md:col-span-2 flex justify-between items-center px-4"
           >
-            <img src="/QRf.png" alt="QR Code" className="h-32 w-32 object-contain rounded-md" />
-            <img src="/qr1.png" alt="QR Code" className="h-32 w-32 object-contain rounded-md" />
-            <img src="/qr2.png" alt="QR Code" className="h-32 w-32 object-contain rounded-md" />
+            {/* <img src="/QRf.png" alt="QR Code" className="h-32 w-32 object-contain rounded-md" /> */}
+      
           </motion.div>
         </div>
 
@@ -59,8 +58,8 @@ export default function Footer() {
         <div className="mt-10 border-t border-primary-foreground/20 pt-6 text-center text-xs text-primary-foreground/80 leading-relaxed space-y-3">
           <p>
             <strong>This project is RERA registered.</strong> | Authorized Channel Partner |
-            Channel Partner RERA Number: <strong>A52100000378</strong> |
-            Project RERA Number: <strong>P52100079047</strong>
+            Channel Partner RERA Number: <strong>_______</strong> |
+            Project RERA Number: <strong>______</strong>
           </p>
           <p>
             Please be advised that this website is not an official site and serves solely as an
@@ -74,7 +73,7 @@ export default function Footer() {
             site's content is prohibited and may violate applicable laws. For accurate and
             up-to-date information, please contact us directly. Thank you for visiting.
           </p>
-          <p className="mt-6 text-sm">© 2025 Mantra Burgundy. All rights reserved.</p>
+          <p className="mt-6 text-sm">© 2025 Godrej Properties. All rights reserved.</p>
         </div>
       </div>
     </footer>

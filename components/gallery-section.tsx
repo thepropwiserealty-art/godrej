@@ -24,163 +24,26 @@ const galleryImages = [
   // ... (galleryImages array is unchanged)
   {
     id: 1,
-    src: "/livingcam.jpg",
-    alt: "Luxury Living Room",
-    category: "Marvilla",
+    src: "/blur1.jpeg",
+    alt: "2BHK",
+    category: "2BHK",
   },
   {
     id: 2,
-    src: "/nightcam.jpg",
-    alt: "Night View",
-    category: "Marvilla",
+    src: "/blur2.jpeg",
+    alt: "3BHK",
+    category: "3BHK",
   },
   {
     id: 3,
-    src: "/livingcam2.jpg",
-    alt: "Living Room ",
-    category: "Marvilla",
+    src: "/blur3.jpeg",
+    alt: "4BHK ",
+    category: "4BHK",
   },
-  {
-    id: 4,
-    src: "/daycam.jpg",
-    alt: "Day view",
-    category: "Marvilla",
-  },
-  {
-    id: 5,
-    src: "/bed.jpg",
-    alt: "Luxury Bedroom",
-    category: "Marvilla",
-  },
-  {
-    id: 6,
-    src: "/CLounge-min-min.jpg",
-    alt: "Lounge Area",
-    category: "Mayfair",
-  },
-  {
-    id: 7,
-    src: "/compMayfiar00.jpg",
-    alt: "Fitness Center",
-    category: "Mayfair",
-  },
-  {
-    id: 8,
-    src: "/C3617_Mantra_Mirari_ll_Image _24 Top view-min-min.jpg",
-    alt: "Top View",
-    category: "Mayfair",
-  },
-  {
-    id: 9,
-    src: "/C3617_Mantra_Mirari_Image_23-min-min.jpg",
-    alt: "Interior View",
-    category: "Mayfair",
-  },
-  {
-    id: 10,
-    src: "/C3617_Mantra_Mirari_Image_18_02-min-min.jpg",
-    alt: "Pool",
-    category: "Mayfair",
-  },
-  {
-    id: 11,
-    src: "/C3617_Mantra_Mirari_Image_15-min-min.jpg",
-    alt: "Bird View",
-    category: "Mayfair",
-  },
-  {
-    id: 12,
-    src: "/private-balcony-with-outdoor-furniture-and-city-vi.jpg",
-    alt: "Private Balcony",
-    category: "Mayfair",
-  },
-  {
-    id: 13,
-    src: "/comp3617_Mantra_Mirari_Image_13_01-min-min.jpg",
-    alt: "Exterior",
-    category: "Mayfair",
-  },
-  {
-    id: 14,
-    src: "/3617_Mantra_Mirari_Image_21_02-min.jpg",
-    alt: "",
-    category: "Mayfair",
-  },
-  {
-    id: 15,
-    src: "/3617_Mantra_Mirari_Image_19-min.jpg",
-    alt: "",
-    category: "Mayfair",
-  },
-   {
-    id: 16,
-    src: "/1.Banquet-min.jpg",
-    alt: "Banquet Hall",
-    category: "One Residences",
-  },
-   {
-    id: 17,
-    src: "/4.Gym-min.jpg",
-    alt: "Gym Area",
-    category: "One Residences",
-  },
-  {
-    id: 18,
-    src: "/5.Mini_Theater-min.jpg",
-    alt: "Mini Theater",
-    category: "One Residences",
-  },
-  {
-    id: 19,
-    src: "/2.Game_Room_01-min.jpg",
-    alt: "Game Room",
-    category: "One Residences",
-  },
-  {
-    id: 20,
-    src: "/1906-Mantra- Mundhwa-45_Cam_Top cropped_high-min.jpg",
-    alt: "",
-    category: "One Residences",
-  },
-  {
-    id: 21,
-    src: "/1906-Mantra- Mundhwa-45 D_Cam_021_high-min.jpg",
-    alt: "Exterior View",
-    category: "One Residences",
-  },
-  {
-    id: 22,
-    src: "/1906-Mantra- Mundhwa-45 D_Cam_030_high-min.jpg",
-    alt: "",
-    category: "One Residences",
-  },
-  {
-    id: 23,
-    src: "/1906-Mantra- Mundhwa-Cam_020_Dusk_high-min.jpg",
-    alt: "Exterior",
-    category: "One Residences",
-  },
-  {
-    id: 24,
-    src: "/1.Entrance_01 -min.jpg",
-    alt: "Entrance",
-    category: "One Residences",
-  },
-  {
-    id: 25,
-    src: "/10.Master_Toilet-min.jpg",
-    alt: "Master Toilet",
-    category: "One Residences",
-  },
-  {
-    id: 26,
-    src: "/1906-Mantra- Mundhwa-Cam_032_high-min.jpg",
-    alt: "",
-    category: "One Residences",
-  },
+  
 ]
 
-const categories = ["All", "Marvilla", "Mayfair", "One Residences"]
+const categories = ["All", "2BHK", "3BHK", "4BHK"]
 
 export default function GallerySection() {
   // ... (All hooks and functions like useRef, useState, useEffect, etc. are unchanged)
