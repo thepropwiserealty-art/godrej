@@ -62,7 +62,7 @@ export default function AmenitiesSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const whatsappNumber = "918237311365"
+  const whatsappNumber = "919657119798"
 
   return (
     <section id="amenities" className="py-20 bg-background" ref={ref}>
@@ -124,7 +124,7 @@ export default function AmenitiesSection() {
                 whileTap={{ scale: 0.95 }}
                 onClick={() =>
                   window.open(
-                    `https://wa.me/${whatsappNumber}?text=Schedule%20me%20tour%20of%20Burgundy%20Series`,
+                    `https://wa.me/${whatsappNumber}?text=Schedule%20me%20tour%20of%20Godrej%20Properties%20MagarPatta`,
                     "_blank"
                   )
                 }

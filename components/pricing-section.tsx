@@ -11,38 +11,39 @@ import { Bed, Bath, Square, MapPin } from "lucide-react"
 const properties = [
   {
     id: 1,
-    title: "Marvilla Villas",
-    location: "Mundhwa Pune",
-    price: "",
-    beds: 5,
-    sqft: "5,500*",
+    title: "2BHK Premium",
+    location: "MagarPatta-Mundhwa Pune",
+    price: "Starting 1.69 Cr*",
+    beds: 2,
+    sqft: "915*",
     image: "Marvilla-Logo.jpg",
-    badge: "Luxury Villas",
+    badge: "Luxury 2BHK",
     badgeVariant: "default" as const,
-    phone: "8237311365",
+    phone: "9657119798",
   },
   {
     id: 2,
-    title: "Mayfair Residences",
-    location: "Upper Koregaon Park, Mundhwa, Pune",
-    price: "",
-    beds: "3/4",
+    title: "3BHK Premium",
+    location: "MagarPatta-Mundhwa Pune",
+    price: "Starting 2.19 Cr*",
+    beds: "3",
+    sqft: "1166*",
     image: "Mayfair-Logo.jpg",
-    badge: "Premium 3 BHK , 4 BHK",
+    badge: "Premium 3 BHK ",
     badgeVariant: "secondary" as const,
-    phone: "8237311365",
+    phone: "9657119798",
   },
   {
     id: 3,
-    title: "One Residences",
-    location: "Magarpatta Pune",
-    price: "",
-    beds: "3/4",
-    sqft: "1400-2100*",
+    title: "4BHK Premium Plus",
+    location: "MagarPatta-Mundhwa Pune",
+    price: "Starting 3.59 Cr*",
+    beds: "4",
+    sqft: "1934*",
     image: "One Residences Final Logo-C2C-01.jpg",
-    badge: "Luxury 3BHK & 4BHK",
+    badge: "Luxury 4BHK",
     badgeVariant: "destructive" as const,
-    phone: "8237311365",
+    phone: "9657119798",
   },
 ]
 
@@ -60,7 +61,7 @@ export default function PricingSection() {
           transition={{ duration: 0.8 }}
         >
           <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6 text-balance">
-            Burgundy Series
+            Godrej Properties
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto text-balance">
             Discover our curated collection of luxury properties, each offering unique features and unparalleled

@@ -12,20 +12,20 @@ export default function FloatingActionButtons() {
       color: "bg-green-500 hover:bg-green-600",
       action: () => {
         const message = encodeURIComponent("Send me details of Mantra Burgundy series")
-        window.open(`https://wa.me/8237311365?text=${message}`, "_blank")
+        window.open(`https://wa.me/9657119798?text=${message}`, "_blank")
       },
     },
     {
       icon: Phone,
       label: "Call",
       color: "bg-blue-500 hover:bg-blue-600",
-      action: () => window.open("tel:+918237311365", "_self"),
+      action: () => window.open("tel:+919657119798", "_self"),
     },
     {
       icon: Car,
       label: "Uber",
       color: "bg-black hover:bg-gray-800",
-      action: () =>window.open(`https://wa.me/8237311365?text=${"Book Uber for me "}`, "_blank")
+      action: () =>window.open(`https://wa.me/9657119798?text=${"Book Uber for me "}`, "_blank")
 
     },
   ]

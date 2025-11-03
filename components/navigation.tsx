@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
@@ -18,18 +18,19 @@ const navItems = [
 ]
 
 export default function Navigation() {
-  const [isScrolled, setIsScrolled] = useState(false)
+  // ❌ Commented out scroll-based background logic
+  // const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
   const [isContactPopupOpen, setIsContactPopupOpen] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 50)
-    }
-
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [])
+  // ❌ Commented out scroll listener
+  // useEffect(() => {
+  //   const handleScroll = () => {
+  //     setIsScrolled(window.scrollY > 50)
+  //   }
+  //   window.addEventListener("scroll", handleScroll)
+  //   return () => window.removeEventListener("scroll", handleScroll)
+  // }, [])
 
   const scrollToSection = (href: string) => {
     const element = document.querySelector(href)
@@ -48,10 +49,9 @@ export default function Navigation() {
 
   return (
     <>
+      {/* ✅ Static Background Navigation */}
       <motion.nav
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
-          isScrolled ? "bg-background/95 backdrop-blur-md shadow-lg" : "bg-transparent"
-        }`}
+        className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md shadow-lg transition-all duration-300"
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.5 }}
@@ -59,13 +59,13 @@ export default function Navigation() {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-16">
 
-            {/* ✅ Updated Logo Section */}
+            {/* ✅ Logo Section */}
             <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
               <div className="rounded-md flex items-center justify-center">
                 <Image
-                  src="/godrejlogo.png"      // Make sure this exists in /public
+                  src="/godrejlogo.png"
                   alt="Company Logo"
-                  width={140}          // Adjust as needed
+                  width={140}
                   height={50}
                   className="h-10 w-auto object-contain"
                   priority

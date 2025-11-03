@@ -69,7 +69,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Burgundy Luxuries Series
+          Godrej MagarPatta
         </motion.h1>
 
 
@@ -99,7 +99,7 @@ export default function HeroSection() {
 
 
           <a
-            href="https://wa.me/8237311365?text=Schedule%20me%20a%20Tour%20for%20burgundy%20series"
+            href="https://wa.me/9657119798?text=Schedule%20me%20a%20Tour%20for%20Godrej%20Properties%20MagarPatta"
             target="_blank"
             rel="noopener noreferrer"
           >
