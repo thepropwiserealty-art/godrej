@@ -17,14 +17,15 @@ export const metadata: Metadata = {
   metadataBase: new URL('https://mantra-burgundy-best-deals.com'),
   
   title: {
-    default: 'Burgundy Series: Luxury Properties by Mantra Realty',
-    template: '%s | Mantra Realty Burgundy Series'
+    default: 'Godrej Properties : Magarpatta City',
+    template: '%s | Godrej Properties',
   },  
   
-  description: 'Discover the Burgundy Series by Mantra Realty. Explore luxury 3BHK & 4BHK villas and apartments with world-class amenities in prime locations.',
+  description: 'Discover the Godrej Properties. Explore luxury 3BHK & 4BHK apartments with world-class amenities in prime locations.',
   
   keywords: [
     'Mantra Realty',
+    'Godrej Properties',
     'Burgundy Series',
     'Marvilla Villas',
     'Mayfair Residences',
@@ -62,10 +63,10 @@ export const metadata: Metadata = {
     description: 'Explore luxury living with Marvilla Villas, Mayfair River Residences, and One Residences. Premium properties with exceptional amenities and thoughtfully designed floor plans.',
     images: [
       {
-        url: '/mantralogo.png',
+        url: '/godrejlogo.png',
         width: 1200,
         height: 630,
-        alt: 'Luxury Living Space - Mantra Realty Burgundy Series',
+        alt: 'Godrej Properties Logo',
       },
     ],
   },
