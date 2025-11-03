@@ -21,49 +21,39 @@ import context from "@/lib/context"
 const floorPlans = [
   {
     id: 1,
-    name: "Marvilla Villa",
-    size: "5000* sqft",
-    beds: 5,
-    price: "From ₹5.10Cr*",
+    name: "2BHK Premium",
+    size: "915* sqft",
+    beds: 2,
+    price: "From ₹1.69Cr*",
     image: "/villa_floor1.png",
-    features: ["5 beds villa", "In Mundhwa ,Pune", "Masterfull engineering"],
+    features: ["2 beds ", "In MagarPatta ,Pune", "Masterfull engineering"],
   },
   {
     id: 2,
-    name: "Mayfair River residences 3BHK",
-    size: "1500* sqft",
+    name: "3BHK Premium",
+    size: "1166* sqft",
     beds: 3,
-    price: "From ₹2.20Cr*",
+    price: "From ₹2.19Cr*",
     image: "/mayfair3bhk.png",
-    features: ["Luxuries 3 BHK ", "At Upper Koregaon Park ,Pune", "Masterfull blend of privacy and community"],
+    features: ["Luxuries 3 BHK ", "In MagarPatta ,Pune", "Masterfull blend of privacy and community"],
   },
   {
     id: 3,
-    name: "Mayfair River residences 4BHK",
-    size: "1743* sqft",
+    name: "3BHK Premium Plus",
+    size: "1440* sqft",
     beds: 4,
-    price: "From ₹2.60Cr*",
+    price: "From ₹2.69Cr*",
     image: "/mayfair4bhk.png",
-    features: ["Luxuries 4 BHK ", "At Upper Koregaon Park ,Pune", "Architectural brilliance & natural beauty"],
+    features: ["Luxuries 3 BHK ", "In MagarPatta ,Pune", "Architectural brilliance & natural beauty"],
   },
   {
     id: 4,
-    name: "One Resideneces 3BHK",
-    size: "1696* sqft",
-    beds: 3,
+    name: " 4BHK Premium Plus",
+    size: "1934* sqft",
+    beds: 4,
     baths: 1,
-    price: "From ₹2.90Cr*",
+    price: "From ₹3.59Cr*",
     image: "/oneresidences3bhk.png",
-    features: ["Luxuries 3 BHK", "At Magarpatta , Pune", "Pure Elegance and Comfort"],
-  },
-  {
-    id: 5,
-    name: "One Resideneces 4BHK",
-    size: "2086* sqft",
-    beds: 3,
-    baths: 1,
-    price: "From ₹2.60Cr*",
-    image: "/oneresidences4bhk.png",
     features: ["Luxuries 4 BHK", "At Magarpatta , Pune", "Pure Elegance and Comfort"],
   },
 ]
@@ -88,7 +78,7 @@ export default function FloorPlanSection() {
 
   const openWhatsApp = (message: string) => {
     window.open(
-      `https://wa.me/8237311365?text=${encodeURIComponent(message)}`,
+      `https://wa.me/9657119798?text=${encodeURIComponent(message)}`,
       "_blank"
     )
   }
@@ -235,7 +225,7 @@ export default function FloorPlanSection() {
                         </Button>
                         <Button
                           variant="outline"
-                          onClick={() => openWhatsApp(`Schedule tour for me to ${selectedPlan.name}`)}
+                          onClick={() => openWhatsApp(`Schedule tour for ${selectedPlan.name}`)}
                         >
                           Schedule Tour
                         </Button>

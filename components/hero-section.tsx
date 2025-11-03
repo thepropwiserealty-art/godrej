@@ -69,7 +69,7 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          Godrej MagarPatta
+          Elaris by Godrej Properties   
         </motion.h1>
 
 
