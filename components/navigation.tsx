@@ -41,7 +41,7 @@ export default function Navigation() {
 
   const openWhatsApp = () => {
     window.open(
-      "https://wa.me/918237311365?text=Give%20me%20details%20of%20Burgundy%20Series",
+      "https://wa.me/919657119798?text=Give%20me%20details%20of%20Burgundy%20Series",
       "_blank"
     )
   }
@@ -63,7 +63,7 @@ export default function Navigation() {
             <motion.div className="flex items-center space-x-2" whileHover={{ scale: 1.05 }}>
               <div className="rounded-md flex items-center justify-center">
                 <Image
-                  src="/logo.png"      // Make sure this exists in /public
+                  src="/godrejlogo.png"      // Make sure this exists in /public
                   alt="Company Logo"
                   width={140}          // Adjust as needed
                   height={50}
