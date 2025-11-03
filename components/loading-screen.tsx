@@ -49,7 +49,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           transition={{ duration: 1.5, ease: "easeInOut" }}
         >
           <Image
-            src="/logo.png"
+            src="/godrejlogo.png"
             alt="Logo"
             width={110}
             height={110}
@@ -65,7 +65,7 @@ export default function LoadingScreen({ onComplete }: LoadingScreenProps) {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ delay: 0.5, duration: 0.6, ease: "easeOut" }}
         >
-          Mantra Burgundy
+          Godrej Properties
         </motion.h1>
 
         {/* Tagline */}
