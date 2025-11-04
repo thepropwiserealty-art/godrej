@@ -1,7 +1,6 @@
 import type { Metadata } from 'next'
 import { GeistSans } from 'geist/font/sans'
 import { GeistMono } from 'geist/font/mono'
-import { Analytics } from '@vercel/analytics/next'
 import ContextProvider from "@/components/contextProvider";
 import './globals.css'
 import type { Viewport } from 'next'
@@ -14,7 +13,7 @@ export const viewport: Viewport = {
 }
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://mantra-burgundy-best-deals.com'),
+  metadataBase: new URL('https://godrej-elaris.in'),
   
   title: {
     default: 'Godrej Properties : Magarpatta City',
@@ -57,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: 'website',
     locale: 'en_US',
-    url: 'https://mantra-burgundy-best-deals.com/',
+    url: 'https://godrej-elaris.in/',
     siteName: 'Mantra Realty - Burgundy Series',
     title: 'Burgundy Series - Luxury Properties by Mantra Realty',
     description: 'Explore luxury living with Marvilla Villas, Mayfair River Residences, and One Residences. Premium properties with exceptional amenities and thoughtfully designed floor plans.',
@@ -77,7 +76,7 @@ export const metadata: Metadata = {
   // },
   
   alternates: {
-    canonical: 'https://mantra-burgundy-best-deals.com/',
+    canonical: 'https://godrej-elaris.in/',
   },
   
   category: 'Real Estate',

@@ -17,6 +17,6 @@ export default function robots(): MetadataRoute.Robots {
         crawlDelay: 0,
       },
     ],
-    sitemap: 'https://mantra-burgundy-best-deals.com/sitemap.xml',
+    sitemap: 'https://godrej-elaris.in//sitemap.xml',
   }
 }
