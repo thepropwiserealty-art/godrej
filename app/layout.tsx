@@ -14,32 +14,29 @@ export const viewport: Viewport = {
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://godrej-elaris.in'),
-  
+
   title: {
-    default: 'Godrej Properties : Magarpatta City',
-    template: '%s | Godrej Properties',
-  },  
-  
-  description: 'Discover the Godrej Properties. Explore luxury 3BHK & 4BHK apartments with world-class amenities in prime locations.',
-  
+    default: 'Godrej Elaris – Luxury Residences in Magarpatta, Hadapsar, Pune',
+    template: '%s | Godrej Elaris – Luxury Residences in Magarpatta, Hadapsar, Pune',
+  },
+
+  description: 'Discover Godrej Elaris in Magarpatta, Hadapsar, Pune. Exclusive 12-acre luxury community offering premium 2, 3 & 4 BHK residences with world-class amenities and green views',
+
   keywords: [
-    'Mantra Realty',
-    'Godrej Properties',
-    'Burgundy Series',
-    'Marvilla Villas',
-    'Mayfair Residences',
-    'One Residences',
-    'luxury apartments',
-    'premium properties',
-    '3BHK apartments',
-    '4BHK apartments',
-    'luxury villas',
-    'real estate',
-    'premium amenities',
-    'swimming pool',
-    'fitness center',
-    'luxury living'
-  ],  
+    "Godrej Properties Pune new launch",
+    "Godrej Properties Pune",
+    "Godrej Elaris",
+    "Godrej Mundhwa",
+    "Godrej Magarpatta",
+    "Godrej Hadapsar",
+    "Godrej New launch in Pune",
+    "Godrej new launch in Magarpatta",
+    "Godrej new launch in Hadapsar",
+    "Godrej new launch in Mundhwa",
+    "Godrej New Project in Mundhwa",
+    "Godrej New Project In Magarpatta",
+    "Godrej New Project In Hadapsar"
+  ],
   robots: {
     index: true,
     follow: true,
@@ -52,14 +49,14 @@ export const metadata: Metadata = {
       'max-snippet': -1,
     },
   },
-  
+
   openGraph: {
     type: 'website',
     locale: 'en_US',
     url: 'https://godrej-elaris.in/',
-    siteName: 'Mantra Realty - Burgundy Series',
-    title: 'Burgundy Series - Luxury Properties by Mantra Realty',
-    description: 'Explore luxury living with Marvilla Villas, Mayfair River Residences, and One Residences. Premium properties with exceptional amenities and thoughtfully designed floor plans.',
+    siteName: 'Godrej Elaris – Luxury Residences in Magarpatta, Hadapsar, Pune',
+    title: 'Godrej Elaris – Luxury Residences in Magarpatta, Hadapsar, Pune',
+    description: 'Discover Godrej Elaris in Magarpatta, Hadapsar, Pune. Exclusive 12-acre luxury community offering premium 2, 3 & 4 BHK residences with world-class amenities and green views',
     images: [
       {
         url: '/godrejlogo.png',
@@ -69,19 +66,17 @@ export const metadata: Metadata = {
       },
     ],
   },
-  // verification: {
-  //   google: 'your-google-verification-code',
-  //   // yandex: 'your-yandex-verification-code',
-  //   // bing: 'your-bing-verification-code',
-  // },
-  
+  verification: {
+    google: 'g1vSw49Ki5K1E3YemDfKItEI7GkktB9c-tpgQHmDJ-g',
+  },
+
   alternates: {
     canonical: 'https://godrej-elaris.in/',
   },
-  
+
   category: 'Real Estate',
 
-   // Additional metadata for single-page site
+  // Additional metadata for single-page site
   other: {
     'article:section': 'Real Estate',
     'og:type': 'website',
@@ -101,7 +96,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`font-sans ${GeistSans.variable} ${GeistMono.variable}`}>
         <ContextProvider>
-        {children}
+          {children}
         </ContextProvider>
       </body>
     </html>
