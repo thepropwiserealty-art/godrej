@@ -1,61 +1,43 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* image blur */
-@layer utilities {
-  .blur-image {
-    @apply blur-md brightness-75 transition-all duration-500 ease-in-out;
-  }
-
-  .blur-image-clear {
-    @apply blur-none brightness-100 transition-all duration-500 ease-in-out;
-  }
-}
-
 @custom-variant dark (&:is(.dark *));
 
-/* ======= BRAND THEME COLORS ======= */
 :root {
-  /* Godrej-inspired premium luxury palette */
-  --background: #f9fafb; /* elegant off-white */
-  --foreground: #1e293b; /* deep slate for readability */
+  /* ======= LUXURY GODREJ THEME (LIGHT MODE) ======= */
+  --background: #f9fafb;
+  --foreground: #1e293b;
   --card: #ffffff;
   --card-foreground: #1e293b;
   --popover: #ffffff;
   --popover-foreground: #1e293b;
 
-  /* Primary & Secondary (Luxury Emerald + Gold) */
-  --primary: #004d40; /* deep emerald green */
+  --primary: #004d40;
   --primary-foreground: #ffffff;
-  --secondary: #b8860b; /* rich muted gold */
+  --secondary: #b8860b;
   --secondary-foreground: #ffffff;
 
-  /* Accent for call-to-action or highlights */
-  --accent: #00695c; /* lighter emerald tone */
-  --accent-foreground: #ffffff;
-
-  /* Supporting Neutrals */
   --muted: #f3f4f6;
   --muted-foreground: #475569;
+
+  --accent: #00695c;
+  --accent-foreground: #ffffff;
+
+  --destructive: #b91c1c;
+  --destructive-foreground: #ffffff;
+
   --border: #e5e7eb;
   --input: #f1f5f9;
   --ring: rgba(0, 77, 64, 0.3);
 
-  /* Destructive */
-  --destructive: #b91c1c;
-  --destructive-foreground: #ffffff;
-
-  /* Chart Colors (luxury muted tones) */
   --chart-1: #b8860b;
   --chart-2: #004d40;
   --chart-3: #c5d6ce;
   --chart-4: #e5e7eb;
   --chart-5: #991b1b;
 
-  /* Rounded corners */
-  --radius: 0.5rem;
+  --radius: 0.625rem;
 
-  /* Sidebar */
   --sidebar: #ffffff;
   --sidebar-foreground: #1e293b;
   --sidebar-primary: #004d40;
@@ -66,8 +48,8 @@
   --sidebar-ring: rgba(0, 77, 64, 0.3);
 }
 
-/* ======= DARK MODE ======= */
 .dark {
+  /* ======= DARK MODE (TROPICAL TEAL + GOLD) ======= */
   --background: #0f172a;
   --foreground: #f1f5f9;
   --card: #1e293b;
@@ -75,22 +57,23 @@
   --popover: #1e293b;
   --popover-foreground: #f8fafc;
 
-  --primary: #00bfa5; /* tropical luxury teal */
+  --primary: #00bfa5;
   --primary-foreground: #0f172a;
-  --secondary: #f1c40f; /* elegant gold */
+  --secondary: #f1c40f;
   --secondary-foreground: #0f172a;
+
+  --muted: #334155;
+  --muted-foreground: #94a3b8;
 
   --accent: #26a69a;
   --accent-foreground: #0f172a;
 
-  --muted: #334155;
-  --muted-foreground: #94a3b8;
+  --destructive: #dc2626;
+  --destructive-foreground: #f8fafc;
+
   --border: #334155;
   --input: #334155;
   --ring: rgba(0, 191, 165, 0.3);
-
-  --destructive: #dc2626;
-  --destructive-foreground: #f8fafc;
 
   --chart-1: #f1c40f;
   --chart-2: #00bfa5;
@@ -108,10 +91,10 @@
   --sidebar-ring: rgba(0, 191, 165, 0.3);
 }
 
-/* ======= THEME TOKENS ======= */
 @theme inline {
-  --font-sans: 'Poppins', 'Inter', 'sans-serif';
+  --font-sans: 'Poppins', 'Inter', sans-serif;
   --font-mono: 'Fira Code', monospace;
+
   --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-card: var(--card);
@@ -150,7 +133,6 @@
   --color-sidebar-ring: var(--sidebar-ring);
 }
 
-/* ======= BASE STYLES ======= */
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -160,54 +142,23 @@
   }
 }
 
-/* ======= UX ENHANCEMENTS ======= */
+/* ======= UTILITY ENHANCEMENTS ======= */
+@layer utilities {
+  .blur-image {
+    @apply blur-md brightness-75 transition-all duration-500 ease-in-out;
+  }
+  .blur-image-clear {
+    @apply blur-none brightness-100 transition-all duration-500 ease-in-out;
+  }
+}
+
+/* ======= GLOBAL ======= */
 html {
   scroll-behavior: smooth;
 }
-
-/* ======= LOADING SCREEN ======= */
-.loading-screen {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(135deg, #ffffff 0%, #e8f5f2 100%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 9999;
-}
-
-.logo-animation {
-  animation: logoFade 2s ease-in-out;
-}
-
-@keyframes logoFade {
-  0%, 100% {
-    opacity: 0;
-    transform: scale(0.8);
-  }
-  50% {
-    opacity: 1;
-    transform: scale(1);
+@layer base {
+  html, body {
+    @apply overflow-x-hidden;
   }
 }
 
-/* ======= SCROLL REVEAL ANIMATIONS ======= */
-@keyframes slideInLeft {
-  from { opacity: 0; transform: translateX(-50px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-@keyframes slideInRight {
-  from { opacity: 0; transform: translateX(50px); }
-  to { opacity: 1; transform: translateX(0); }
-}
-@keyframes slideInUp {
-  from { opacity: 0; transform: translateY(50px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-.animate-slide-in-left { animation: slideInLeft 0.8s ease-out forwards; }
-.animate-slide-in-right { animation: slideInRight 0.8s ease-out forwards; }
-.animate-slide-in-up { animation: slideInUp 0.8s ease-out forwards; }

@@ -28,7 +28,7 @@ export default function HeroSection() {
       style={{
         // This ensures full-bleed layout even on mobile
         width: '100%',
-        maxWidth: '100vw',
+        maxWidth: '100%',
       }}
     >
       {/* ✅ Background Image */}
