@@ -62,7 +62,7 @@ export default function AmenitiesSection() {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true, margin: "-100px" })
 
-  const whatsappNumber = "919657119798"
+  const whatsappNumber = "919029511365"
 
   return (
     <section id="amenities" className="py-20 bg-background" ref={ref}>
