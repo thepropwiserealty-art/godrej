@@ -9,8 +9,8 @@ import { MapPin } from "lucide-react"
 
 const projects = [
   {
-    name: "Elaris*",
-    directionsLink: "https://www.google.com/maps/dir/?api=1&destination=Mantra+Marvilla+Project+Pune",
+    name: "Godrej Elaris",
+    directionsLink: "https://www.google.com/maps/dir/?api=1&destination=Godrej+Elaris+Pune",
     mapsLink: "https://maps.app.goo.gl/CoE3UvsZLvE8PLeF6",
     embedSrc:
       "https://www.google.com/maps?q=18.513935,73.916672&z=15&output=embed",

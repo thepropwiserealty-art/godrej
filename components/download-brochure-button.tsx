@@ -8,7 +8,7 @@ import toast from "react-hot-toast"
 export default function DownloadBrochureButton() {
   const downloadBrochure = async () => {
     try {
-      const phone = "9029511365"
+      const phone = "919029511365"
       const message = encodeURIComponent("Send me a brochure of Godrej Elaris Project")
       window.open(`https://wa.me/${phone}?text=${message}`, "_blank")
 

@@ -21,40 +21,40 @@ import context from "@/lib/context"
 const floorPlans = [
   {
     id: 1,
-    name: "2BHK Premium",
-    size: "915* sqft",
+    name: "2 BHK Premium",
+    size: "915 sq.ft. Carpet",
     beds: 2,
-    price: "From ₹1.69Cr*",
+    price: "Starting from ₹1.71+ Cr.",
     image: "/bhk2.jpeg",
-    features: ["2 beds ", "In MagarPatta ,Pune", "Masterfull engineering"],
+    features: ["2 BHK Premium", "915 sq.ft. Carpet", "Starting from ₹1.71+ Cr."],
   },
   {
     id: 2,
-    name: "3BHK Premium",
-    size: "1166* sqft",
+    name: "3 BHK Premium",
+    size: "1166 sq.ft. Carpet",
     beds: 3,
-    price: "From ₹2.19Cr*",
+    price: "Starting from ₹2.25+ Cr.",
     image: "/bhk3.jpeg",
-    features: ["Luxuries 3 BHK ", "In MagarPatta ,Pune", "Masterfull blend of privacy and community"],
+    features: ["3 BHK Premium", "1166 sq.ft. Carpet", "Starting from ₹2.25+ Cr."],
   },
   {
     id: 3,
-    name: "3BHK Premium Plus",
-    size: "1440* sqft",
-    beds: 4,
-    price: "From ₹2.69Cr*",
+    name: "3 BHK Premium Plus",
+    size: "1440 sq.ft. Carpet",
+    beds: 3,
+    price: "Starting from ₹2.75+ Cr.",
     image: "/bhk3u.jpeg",
-    features: ["Luxuries 3 BHK ", "In MagarPatta ,Pune", "Architectural brilliance & natural beauty"],
+    features: ["3 BHK Premium Plus", "1440 sq.ft. Carpet", "Starting from ₹2.75+ Cr."],
   },
   {
     id: 4,
-    name: " 4BHK Premium Plus",
-    size: "1934* sqft",
+    name: "4 BHK Premium Plus",
+    size: "1934 sq.ft. Carpet",
     beds: 4,
     baths: 1,
-    price: "From ₹3.59Cr*",
+    price: "Starting from ₹3.75+ Cr.",
     image: "/bhk4.jpeg",
-    features: ["Luxuries 4 BHK", "At Magarpatta , Pune", "Pure Elegance and Comfort"],
+    features: ["4 BHK Premium Plus", "1934 sq.ft. Carpet", "Starting from ₹3.75+ Cr."],
   },
 ]
 
@@ -78,7 +78,7 @@ export default function FloorPlanSection() {
 
   const openWhatsApp = (message: string) => {
     window.open(
-      `https://wa.me/9657119798?text=${encodeURIComponent(message)}`,
+      `https://wa.me/919029511365?text=${encodeURIComponent(message)}`,
       "_blank"
     )
   }
@@ -219,13 +219,13 @@ export default function FloorPlanSection() {
                       <div className="flex gap-2">
                         <Button
                           className="bg-primary hover:bg-primary/90"
-                          onClick={() => openWhatsApp(`Send me ${selectedPlan.name} floor plan`)}
+                          onClick={() => openWhatsApp(`Send me ${selectedPlan.name} floor plan for Godrej Elaris`)}
                         >
                           Download Plan
                         </Button>
                         <Button
                           variant="outline"
-                          onClick={() => openWhatsApp(`Schedule tour for ${selectedPlan.name}`)}
+                          onClick={() => openWhatsApp(`Schedule tour for ${selectedPlan.name} at Godrej Elaris`)}
                         >
                           Schedule Tour
                         </Button>
@@ -292,7 +292,7 @@ export default function FloorPlanSection() {
                             <Button
                               size="sm"
                               className="bg-primary hover:bg-primary/90 flex-1"
-                              onClick={() => openWhatsApp(`Send me ${plan.name} floor plan`)}
+                              onClick={() => openWhatsApp(`Send me ${plan.name} floor plan for Godrej Elaris`)}
                             >
                               Download Plan
                             </Button>
@@ -300,7 +300,7 @@ export default function FloorPlanSection() {
                               variant="outline"
                               size="sm"
                               className="flex-1 bg-transparent"
-                              onClick={() => openWhatsApp(`Schedule tour for me to ${plan.name}`)}
+                              onClick={() => openWhatsApp(`Schedule tour for ${plan.name} at Godrej Elaris`)}
                             >
                               Schedule Tour
                             </Button>

@@ -23,7 +23,7 @@ export default function Footer() {
               <div className="bg-white p-2 rounded-md flex items-center justify-center">
                 <img
                   src="/godrejlogo.png"
-                  alt="Mantra Burgundy Logo"
+                  alt="Godrej Elaris Logo"
                   className="h-14 w-auto rounded-md"
                 />
               </div>
@@ -31,11 +31,11 @@ export default function Footer() {
             <div className="space-y-2 text-primary-foreground/80 text-sm">
               <div className="flex items-center">
                 <MapPin className="w-4 h-4 mr-2" />
-                <span>Godrej Property </span>
+                <span>Godrej Elaris, Magarpatta, Pune</span>
               </div>
               <div className="flex items-center">
                 <Phone className="w-4 h-4 mr-2" />
-                <span>+91 9657119798</span>
+                <a href="tel:+919029511365" className="hover:underline">+91 9029511365</a>
               </div>
               
             </div>
@@ -58,8 +58,8 @@ export default function Footer() {
         <div className="mt-10 border-t border-primary-foreground/20 pt-6 text-center text-xs text-primary-foreground/80 leading-relaxed space-y-3">
           <p>
             <strong>This project is RERA registered.</strong> | Authorized Channel Partner |
-            Channel Partner RERA Number: <strong>_______</strong> |
-            Project RERA Number: <strong>______</strong>
+            Channel Partner RERA No.: <strong>A52100000378</strong> |
+            Project RERA No.: <strong>PM1260002501385</strong>
           </p>
           <p>
             Please be advised that this website is not an official site and serves solely as an
@@ -73,7 +73,7 @@ export default function Footer() {
             site's content is prohibited and may violate applicable laws. For accurate and
             up-to-date information, please contact us directly. Thank you for visiting.
           </p>
-          <p className="mt-6 text-sm">© 2025 Godrej Properties. All rights reserved.</p>
+          <p className="mt-6 text-sm">© 2026 Godrej Elaris. All rights reserved.</p>
         </div>
       </div>
     </footer>

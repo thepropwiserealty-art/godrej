@@ -11,51 +11,51 @@ import { Bed, Bath, Square, MapPin } from "lucide-react"
 const properties = [
   {
     id: 1,
-    title: "2BHK Premium",
+    title: "2 BHK Premium",
     location: "MagarPatta-Mundhwa Pune",
-    price: "Starting ₹1.71Cr*",
+    price: "Starting from ₹1.71+ Cr.",
     beds: 2,
-    sqft: "915*",
+    sqft: "915 sq.ft. Carpet",
     image: "first.jpeg",
-    badge: "Luxury 2BHK",
+    badge: "Luxury 2 BHK",
     badgeVariant: "default" as const,
-    phone: "9029511365",
+    phone: "919029511365",
   },
   {
     id: 2,
-    title: "3BHK Premium",
+    title: "3 BHK Premium",
     location: "MagarPatta-Mundhwa Pune",
-    price: "Starting ₹2.25Cr*",
+    price: "Starting from ₹2.25+ Cr.",
     beds: "3",
-    sqft: "1166*",
+    sqft: "1166 sq.ft. Carpet",
     image: "second.jpeg",
-    badge: "Premium 3 BHK ",
+    badge: "Premium 3 BHK",
     badgeVariant: "secondary" as const,
-    phone: "9029511365",
+    phone: "919029511365",
   },
   {
     id: 3,
-    title: "3BHK Premium Plus",
+    title: "3 BHK Premium Plus",
     location: "MagarPatta-Mundhwa Pune",
-    price: "Starting ₹2.75Cr*",
+    price: "Starting from ₹2.75+ Cr.",
     beds: "3",
-    sqft: "1440*",
+    sqft: "1440 sq.ft. Carpet",
     image: "third.jpeg",
-    badge: "Luxury 3BHK",
+    badge: "Luxury 3 BHK",
     badgeVariant: "destructive" as const,
-    phone: "9029511365",
+    phone: "919029511365",
   },
   {
     id: 4,
-    title: "4BHK Premium Plus",
+    title: "4 BHK Premium Plus",
     location: "MagarPatta-Mundhwa Pune",
-    price: "Starting ₹3.75Cr*",
+    price: "Starting from ₹3.75+ Cr.",
     beds: "4",
-    sqft: "1934*",
+    sqft: "1934 sq.ft. Carpet",
     image: "third.jpeg",
-    badge: "Luxury 4BHK",
+    badge: "Luxury 4 BHK",
     badgeVariant: "destructive" as const,
-    phone: "9029511365",
+    phone: "919029511365",
   },
 ]
 
@@ -128,7 +128,7 @@ export default function PricingSection() {
                     </div> */}
                     <div className="flex items-center text-muted-foreground">
                       <Square className="w-4 h-4 mr-1" />
-                      <span className="text-sm">{property.sqft || "-"} sqft</span>
+                      <span className="text-sm">{property.sqft || "-"}</span>
                     </div>
                   </div>
 
@@ -137,7 +137,7 @@ export default function PricingSection() {
                       className="flex-1 bg-primary hover:bg-primary/90"
                       onClick={() => {
                         const msg = encodeURIComponent(
-                          `I want details of ${property.title}`
+                          `I want details of ${property.title} at Godrej Elaris`
                         )
                         window.open(
                           `https://wa.me/${property.phone}?text=${msg}`,
@@ -153,7 +153,7 @@ export default function PricingSection() {
                       className="flex-1 bg-transparent"
                       onClick={() => {
                         const msg = encodeURIComponent(
-                          `I want to schedule a tour for ${property.title}.`
+                          `I want to schedule a tour for ${property.title} at Godrej Elaris.`
                         )
                         window.open(
                           `https://wa.me/${property.phone}?text=${msg}`,

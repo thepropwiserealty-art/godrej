@@ -12,7 +12,7 @@ export default function FloatingActionButtons() {
       color: "bg-green-500 hover:bg-green-600",
       action: () => {
         const message = encodeURIComponent("Send me details of Godrej Elaris")
-        window.open(`https://wa.me/9029511365?text=${message}`, "_blank")
+        window.open(`https://wa.me/919029511365?text=${message}`, "_blank")
       },
     },
     {
@@ -25,7 +25,7 @@ export default function FloatingActionButtons() {
       icon: Car,
       label: "Uber",
       color: "bg-black hover:bg-gray-800",
-      action: () =>window.open(`https://wa.me/9029511365?text=${"Book me Uber or Ola For Godrej Elaris"}`, "_blank")
+      action: () =>window.open(`https://wa.me/919029511365?text=${encodeURIComponent("Book me Uber or Ola For Godrej Elaris")}`, "_blank")
 
     },
   ]

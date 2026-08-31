@@ -124,7 +124,7 @@ export default function AmenitiesSection() {
                 whileTap={{ scale: 0.95 }}
                 onClick={() =>
                   window.open(
-                    `https://wa.me/${whatsappNumber}?text=Schedule%20me%20tour%20of%20Godrej%20Properties%20MagarPatta`,
+                    `https://wa.me/${whatsappNumber}?text=Schedule%20me%20a%20tour%20of%20Godrej%20Elaris`,
                     "_blank"
                   )
                 }
@@ -138,7 +138,7 @@ export default function AmenitiesSection() {
                 whileTap={{ scale: 0.95 }}
                 onClick={() =>
                   window.open(
-                    `https://wa.me/${whatsappNumber}?text=Send%20me%20the%20brochure`,
+                    `https://wa.me/${whatsappNumber}?text=Send%20me%20the%20brochure%20for%20Godrej%20Elaris`,
                     "_blank"
                   )
                 }

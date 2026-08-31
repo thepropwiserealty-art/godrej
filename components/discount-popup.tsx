@@ -60,8 +60,8 @@ export default function DiscountPopup({ isSubmitted, setIsSubmitted }: isSubmitP
         setName("")
         setPhone("")
         setEmail("")
-        const whatsappNumber = "9029511365"
-        const message = `Hi, I want to enquire about Godrej Properties.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}`
+        const whatsappNumber = "919029511365"
+        const message = `Hi, I want to enquire about Godrej Elaris.%0AName: ${name}%0AEmail: ${email}%0APhone: ${phone}`
         window.open(`https://wa.me/${whatsappNumber}?text=${message}`, "_blank")
         return "success"
       },

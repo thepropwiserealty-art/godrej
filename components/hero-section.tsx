@@ -99,7 +99,7 @@ export default function HeroSection() {
 
 
           <a
-            href="https://wa.me/9657119798?text=Schedule%20me%20a%20Tour%20for%20Godrej%20Properties%20MagarPatta"
+            href="https://wa.me/919029511365?text=Schedule%20me%20a%20Tour%20for%20Godrej%20Elaris"
             target="_blank"
             rel="noopener noreferrer"
           >

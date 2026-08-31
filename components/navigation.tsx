@@ -42,7 +42,7 @@ export default function Navigation() {
 
   const openWhatsApp = () => {
     window.open(
-      "https://wa.me/919657119798?text=Give%20me%20details%20of%20Godrej%20Project%20MagarPatta%20City",
+      "https://wa.me/919029511365?text=Give%20me%20details%20of%20Godrej%20Elaris",
       "_blank"
     )
   }
